@@ -1,0 +1,68 @@
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=17.7 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=16.8 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=14.8 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=17.7 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 8ms
+rtt min/avg/max/mdev = 14.755/16.731/17.705/1.211 ms
+Thu 25 Mar 2021 02:14:44 PM PDT
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=22.2 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=18.5 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=16.9 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=16.10 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 7ms
+rtt min/avg/max/mdev = 16.850/18.627/22.188/2.158 ms
+Thu 25 Mar 2021 03:24:32 PM PDT
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=21.7 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=21.1 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=18.2 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=16.7 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 7ms
+rtt min/avg/max/mdev = 16.717/19.438/21.708/2.062 ms
+Thu 25 Mar 2021 04:52:18 PM PDT
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=26.0 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=19.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=19.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=18.2 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 8ms
+rtt min/avg/max/mdev = 18.186/20.691/26.000/3.099 ms
+Thu 25 Mar 2021 05:42:12 PM PDT
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=19.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=18.8 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=16.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=16.5 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 7ms
+rtt min/avg/max/mdev = 16.322/17.781/19.522/1.405 ms
+Mon 29 Mar 2021 10:24:59 AM PDT
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=115 time=17.8 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=115 time=18.8 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=115 time=15.3 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 3 received, 25% packet loss, time 49ms
+rtt min/avg/max/mdev = 15.296/17.299/18.800/1.481 ms
+Mon 29 Mar 2021 10:46:49 AM PDT
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=115 time=25.3 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=115 time=18.1 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=115 time=16.0 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=115 time=16.1 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 7ms
+rtt min/avg/max/mdev = 16.003/18.865/25.329/3.823 ms

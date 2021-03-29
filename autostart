@@ -1,0 +1,6 @@
+@lxpanel --profile LXDE
+@pcmanfm --desktop --profile LXDE
+@xscreensaver -no-splash
+@sh /home/pi/startup/bkstartup.sh
+@sh /home/pi/startup/copy_config.sh
+@sh /home/pi/startup/gamepad.sh
