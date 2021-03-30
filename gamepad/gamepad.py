@@ -22,7 +22,8 @@ print(gamepad)
 turnServo = Servo.Servo(0);
 picar.setup()
 bw = picar.back_wheels.Back_Wheels()
-int speedup = 0
+speedup = 0;
+acc = 0
 
 
 
@@ -41,23 +42,23 @@ for event in gamepad.read_loop():
                 #explorerhat.motor.one.stop()
         elif event.code == 1:
             if event.value == 0:
-                if(speedup < 100):
-                    speedup = speedup * 2
-                bw.speed = speedup 
-                bw.backward`()
+                acc = 3
+                speedup = 35 
+                bw.backward()
                 print("Up");#explorerhat.motor.two.forwards(event.value-155)
             elif event.value == 2:
-                if(speedup < 50):
-                   speedup++
-                bw.speed = speedup 
+                acc = 1
+                speedup = 35
                 bw.forward();
                 print("Down");#explorerhat.motor.two.backwards((100-event.value))
             else:
-                if(speedup >= 1)
-                    bw.speed = speedup
-                    speedup = speedup - 5
-                if(speedup <= 0):
-                    bw.stop()#turnServo.write(0);
+                acc = -10;#bw.stop()#turnServo.write(0);
                 #explorerhat.motor.two.stop()
                 print("Stop")
+    speedup = speedup + acc
+    if(speedup < 100):
+        if(speedup > 0):
+            bw.speed = speedup
+        else:
+            bw.stop()
 
