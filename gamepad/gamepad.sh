@@ -1,5 +1,5 @@
 #!/bin/bash
-while True
+while 1 == 1 
 do
 cd /var/www/html/gamepad
 python gamepad.py
