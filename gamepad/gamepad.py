@@ -42,23 +42,24 @@ for event in gamepad.read_loop():
                 #explorerhat.motor.one.stop()
         elif event.code == 1:
             if event.value == 0:
-                acc = 3
+                acc = 7 
                 speedup = 35 
-                bw.backward()
                 print("Up");#explorerhat.motor.two.forwards(event.value-155)
             elif event.value == 2:
-                acc = 1
+                acc = 4 
                 speedup = 35
-                bw.forward();
                 print("Down");#explorerhat.motor.two.backwards((100-event.value))
             else:
-                acc = -10;#bw.stop()#turnServo.write(0);
+                bw.stop()#turnServo.write(0);
                 #explorerhat.motor.two.stop()
                 print("Stop")
-    speedup = speedup + acc
     if(speedup < 100):
-        if(speedup > 0):
-            bw.speed = speedup
-        else:
-            bw.stop()
+        speedup = speedup + acc
+    speedup = speedup - 1
+    if(acc == 7):
+        bw.backward()
+    if(acc == 4):
+        bw.forward()
+    if(speedup < 100):
+        bw.speed = speedup
 
