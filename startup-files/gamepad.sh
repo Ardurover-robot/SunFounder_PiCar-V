@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 30
 cd /var/www/html
 mkdir gamepad
 cd gamepad
@@ -10,5 +11,4 @@ touch gamepad.py
 #to make sure it works.
 ls /dev/input/ > /var/www/html/gamepad/dev.txt
 
-lxterminal -e python gamepad.py 
-scrot /var/www/html/screen.jpg
+lxterminal -e /var/www/html/gamepad/gamepad.sh
