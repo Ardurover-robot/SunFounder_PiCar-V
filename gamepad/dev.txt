@@ -1,6 +1,5 @@
 by-id
 by-path
 event0
-event1
 js0
 mice
