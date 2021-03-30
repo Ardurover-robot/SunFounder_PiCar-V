@@ -19,9 +19,10 @@ from evdev import InputDevice, categorize, ecodes
 gamepad = InputDevice('/dev/input/event0')
 print(gamepad)
 
-picar.setup()
 turnServo = Servo.Servo(0);
-bw = back_wheels.Back_Wheels();
+picar.setup()
+bw = picar.back_wheels.Back_Wheels()
+int speedup = 0
 
 
 
@@ -40,14 +41,23 @@ for event in gamepad.read_loop():
                 #explorerhat.motor.one.stop()
         elif event.code == 1:
             if event.value == 0:
-                bw.speed = 60
-                bw.forward()
+                if(speedup < 100):
+                    speedup = speedup * 2
+                bw.speed = speedup 
+                bw.backward`()
                 print("Up");#explorerhat.motor.two.forwards(event.value-155)
             elif event.value == 2:
-                bw.speed = 20;
-                bw.backward();
+                if(speedup < 50):
+                   speedup++
+                bw.speed = speedup 
+                bw.forward();
                 print("Down");#explorerhat.motor.two.backwards((100-event.value))
             else:
-                bw.stop()#turnServo.write(0);
+                if(speedup >= 1)
+                    bw.speed = speedup
+                    speedup = speedup - 5
+                if(speedup <= 0):
+                    bw.stop()#turnServo.write(0);
                 #explorerhat.motor.two.stop()
+                print("Stop")
 
